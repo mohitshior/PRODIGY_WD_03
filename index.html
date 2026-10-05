@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe | Prodigy Infotech Task-03</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="game-card">
+      <div class="header">
+        <div>
+          <p class="eyebrow">PRODIGY INFOTECH • TASK-03</p>
+          <h1>Tic-Tac-Toe</h1>
+          <p class="subtitle">Classic game with Player vs Player and AI modes.</p>
+        </div>
+        <button id="resetBtn" class="secondary-btn">↻ Reset</button>
+      </div>
+
+      <div class="controls">
+        <label>
+          Mode
+          <select id="mode">
+            <option value="ai">Player vs AI</option>
+            <option value="pvp">Player vs Player</option>
+          </select>
+        </label>
+
+        <label>
+          You play
+          <select id="playerMark">
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="status" class="status">Your turn — X</div>
+
+      <div id="board" class="board" aria-label="Tic-Tac-Toe board"></div>
+
+      <div class="scoreboard">
+        <div><span>Player X</span><strong id="scoreX">0</strong></div>
+        <div><span>Draws</span><strong id="scoreDraw">0</strong></div>
+        <div><span>Player O</span><strong id="scoreO">0</strong></div>
+      </div>
+
+      <p class="hint">Get three matching marks in a row, column, or diagonal to win.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
